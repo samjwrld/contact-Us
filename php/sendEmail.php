@@ -15,11 +15,11 @@ if($_POST) {
 
    $name = trim(stripslashes($_POST['name']));
    $email = trim(stripslashes($_POST['email']));
-   $subject = trim(stripslashes($_POST['phone']));
+   $phone = trim(stripslashes($_POST['phone']));
    $contact_message = trim(stripslashes($_POST['message']));
 
    
-	if ($subject == '') { $subject = "Contact Form Submission"; }
+	if ($phone == '') { $phone = "Contact Form Submission"; }
 
    // Set Message
    $message .= "Email from: " . $name . "<br />";
@@ -38,7 +38,7 @@ if($_POST) {
 	$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
    ini_set("sendmail_from", $to); // for windows server
-   $mail = mail($to, $subject, $message, $headers);
+   $mail = mail($to, $phone, $message, $headers);
 
 	if ($mail) { echo "OK"; }
    else { echo "Something went wrong. Please try again."; }
