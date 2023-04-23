@@ -362,7 +362,7 @@ small,
 mark,
 .mark {
   padding: 0.2em;
-  background-color: #2a333c; }
+  background-color: #fcf8e3; }
 
 .list-unstyled {
   padding-left: 0;
@@ -8278,8 +8278,8 @@ textarea.form-control {
     border-color: #1089ff !important;
     color: #fff; }
     .btn.btn-primary:hover, .btn.btn-primary:focus {
-      border-color: 2a333c !important;
-      background: 2a333c !important; }
+      border-color: #006fdc !important;
+      background: #006fdc !important; }
 
 #contactForm .error {
   color: red;
